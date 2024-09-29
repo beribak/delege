@@ -1,0 +1,72 @@
+---
+  layout: default
+  title: Contact
+---
+
+<div class="container px-4 py-5" id="hanging-icons">
+  <h2 class="pb-2 border-bottom">Контакт</h2>
+
+  <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="fa-solid fa-phone"></i>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Телефон</h3>
+        <p class="mb-1 fw-bold">+ 389 2 31 32 200</p>
+        <p class="mb-1 fw-bold">+ 389 2 32 98 020</p>
+        <p class="mb-1 fw-bold">+ 389 2 32 98 022</p>
+      </div>
+    </div>
+
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="fa-solid fa-fax"></i>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Тел/Факс</h3>
+        <p class="mb-1 fw-bold">+ 389 2 32 25 131</p>
+      </div>
+    </div>
+
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="fa-solid fa-location-dot"></i>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Адреса</h3>
+        <p class="mb-1 fw-bold">Бул.Кочо Рацин бр.14-6/6</p>
+        <p class="mb-1 fw-bold">1000 Скопје, Р.Македонија</p>
+      </div>
+    </div>
+    
+    <div class="col d-flex align-items-start">
+      <div class="icon-square text-body-emphasis d-inline-flex align-items-center justify-content-center fs-4 flex-shrink-0 me-3">
+        <i class="fa-solid fa-envelope"></i>
+      </div>
+      <div>
+        <h3 class="fs-2 text-body-emphasis">Е-пошта</h3>
+        <p class="fw-bold"><a href="mailto:contact@delege.com.mk">contact@delege.com.mk</a></p>
+    
+      </div>
+    </div>
+  </div>
+
+  <div class="m-auto" id="map" style="width: 50vw; height: 40vh;"></div>
+  
+  <script>
+    mapboxgl.accessToken = 'pk.eyJ1IjoiZGFua29iIiwiYSI6ImNsYTV2cHJiNTBtdnQzcHFrYW85NnBycjYifQ.kK95R8i2UmG9iVgvZbnlfQ';
+      const map = new mapboxgl.Map({
+          container: 'map', // container ID
+          style: 'mapbox://styles/dankob/clcrt8995002214l8kol3f0pc', // style URL
+          center: [21.435099, 41.993627], // starting position [lng, lat]. Note that lat must be set between -90 and 90
+          zoom: 15// starting zoom
+      });
+
+    const marker1 = new mapboxgl.Marker()
+        .setLngLat([21.435099, 41.993627])
+        .addTo(map);
+  </script>
+</div>
+
+
