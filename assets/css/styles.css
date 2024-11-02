@@ -39,3 +39,46 @@
 .footer .fa-heart {
   color: #D23333;
 }
+
+
+@keyframes slideIn {
+  0% {
+    transform: translateX(-100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-left {
+  animation: slideIn 1s ease-out forwards;
+}
+
+@keyframes slideInRight {
+  0% {
+    transform: translateX(100%);
+    opacity: 0;
+  }
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+.slide-in-right {
+  animation: slideInRight 1s ease-out forwards;
+}
+
+
+
+.card-options {
+  width: 100%;
+}
+
+@media (min-width: 768px) {
+  .card-options {
+    /* width: 50% !important; */
+  }
+}
