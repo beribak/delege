@@ -1,10 +1,9 @@
 ---
   layout: default
-  title: Contact
+  title: Kontakt
 ---
 
 <div class="container px-4 py-5" id="hanging-icons">
-  <!-- <h2 class="pb-2 border-bottom">Контакт</h2> -->
   <h1 class="display-4 fw-bold text-body-emphasis mb-4">Контакт</h1>
 
   <div class="row g-4 py-5 row-cols-1 row-cols-lg-4">
@@ -52,22 +51,22 @@
       </div>
     </div>
   </div>
-
-  <div class="m-auto" id="map" style="width: 70vw; height: 60vh;"></div>
-  
-  <script>
-    mapboxgl.accessToken = 'pk.eyJ1IjoiZGFua29iIiwiYSI6ImNsYTV2cHJiNTBtdnQzcHFrYW85NnBycjYifQ.kK95R8i2UmG9iVgvZbnlfQ';
-      const map = new mapboxgl.Map({
-          container: 'map', // container ID
-          style: 'mapbox://styles/dankob/clcrt8995002214l8kol3f0pc', // style URL
-          center: [21.435099, 41.993627], // starting position [lng, lat]. Note that lat must be set between -90 and 90
-          zoom: 15// starting zoom
-      });
-
-    const marker1 = new mapboxgl.Marker()
-        .setLngLat([21.435099, 41.993627])
-        .addTo(map);
-  </script>
 </div>
+
+<div class="" id="map"></div>
+
+<script>
+  mapboxgl.accessToken = 'pk.eyJ1IjoiZGFua29iIiwiYSI6ImNsYTV2cHJiNTBtdnQzcHFrYW85NnBycjYifQ.kK95R8i2UmG9iVgvZbnlfQ';
+    const map = new mapboxgl.Map({
+        container: 'map', // container ID
+        style: 'mapbox://styles/dankob/clcrt8995002214l8kol3f0pc', // style URL
+        center: [21.435099, 41.993627], // starting position [lng, lat]. Note that lat must be set between -90 and 90
+        zoom: 15// starting zoom
+    });
+
+  const marker1 = new mapboxgl.Marker()
+      .setLngLat([21.435099, 41.993627])
+      .addTo(map);
+</script>
 
 

@@ -1,6 +1,35 @@
 ---
 ---
 /* // @import "main"; */
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Alumni Sans", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: bold;
+  font-style: normal;
+}
+
+h1 {
+  font-size: 3.2rem;
+}
+
+p {
+  font-family: "Ubuntu Sans", sans-serif;
+}
+
+.nav-link {
+ 
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+}
+
+#map {
+  width: 100vw; 
+  height: 60vh;
+}
+
 .red {
   color: red;
 }
@@ -78,7 +107,21 @@
 }
 
 @media (min-width: 768px) {
+  #map {
+    width: 70vw; 
+    height: 60vh;
+    margin: auto;
+    margin-bottom: 100px;
+  }
+
+  .card-banner {
+    width: 100%!important;
+  }
+
   .card-options {
+    .card {
+      width: 50%;
+    }
     /* width: 50% !important; */
   }
 }

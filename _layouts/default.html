@@ -10,32 +10,40 @@
     
     <link href="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.css" rel="stylesheet">
     <link rel="stylesheet" href="assets/css/styles.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Alumni+Sans:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Phudu:wght@300..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Ubuntu+Sans:ital,wght@0,100..800;1,100..800&display=swap" rel="stylesheet">
 
     <script src="https://api.mapbox.com/mapbox-gl-js/v3.6.0/mapbox-gl.js"></script>
   </head>
   
   <body>
-    <header class="p-3 text-bg-dark" style="height: 10vh;">
-      <div class="container">
-        <div class="d-flex flex-wrap align-items-center justify-content-center justify-content-lg-start">
-          <ul class="nav col-12 col-lg-auto me-lg-auto mb-2 justify-content-center mb-md-0">
+    <nav class="navbar navbar-expand-lg bg-dark sticky-top" style="height: 10vh;">
+      <div class="container-fluid">
+        <button class="navbar-toggler text-white" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+          <i class="fa-solid fa-bars text-white"></i>
+        </button>
+        <div class="collapse navbar-collapse bg-dark m-0 p-2" style="width: 100vw !important;" id="navbarText">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
             {% if page.url == '/' %}
-              <li><a href="" class="nav-link px-2 text-white text-decoration-underline">Дома</a></li>
+              <li class="nav-item"><a href="./" class="nav-link px-2 text-white fw-bold">Дома</a></li>
             {% else %}
-              <li><a href="" class="nav-link px-2 text-white">Дома</a></li>
+              <li class="nav-item"><a href="./" class="nav-link px-2 text-white fw-bold">Дома</a></li>
             {% endif %}
-            <li><a href="info" class="nav-link px-2 text-white">За нас</a></li>
-            <li><a href="uslugi" class="nav-link px-2 text-white">Услуги</a></li>
-            <li><a href="advokati" class="nav-link px-2 text-white">Адвокати и соработници</a></li>
-            <li><a href="contact" class="nav-link px-2 text-white">Контакт</a></li>
+            <li class="nav-item"><a href="info" class="nav-link px-2 text-white fw-bold">За нас</a></li>
+            <li class="nav-item"><a href="uslugi" class="nav-link px-2 text-white fw-bold">Услуги</a></li>
+            <li class="nav-item"><a href="advokati" class="nav-link px-2 text-white fw-bold">Адвокати и соработници</a></li>
+            <li class="nav-item"><a href="kontakt" class="nav-link px-2 text-white fw-bold">Контакт</a></li>
           </ul>
-          
+
           <a href="/" class="d-flex align-items-center mb-2 mb-lg-0 text-white text-decoration-none">
             <img src="assets/images/delege_logo.png" style="height: 40px;" alt="">
           </a>
         </div>
       </div>
-    </header>
+    </nav>
 
     <main>
       {{ content }}
